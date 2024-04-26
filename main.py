@@ -11,6 +11,9 @@ datumText = input()
 
 someone = Osoba(datumText)
 
-print(someone.birthday())
+print(someone.birthday_2024())
 
-print(f"Je ti x let a narozeniny máš za y dní.")
+print(someone.how_old_they_are())
+
+print(f"Je ti {someone.how_old_they_are()} let 
+a narozeniny máš za y dní.")
