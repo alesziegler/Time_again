@@ -15,5 +15,6 @@ print(someone.birthday_2024())
 
 print(someone.how_old_they_are())
 
-print(f"Je ti {someone.how_old_they_are()} let 
-a narozeniny máš za y dní.")
+print(someone.how_long_till_next_birthday())
+
+print(f"Je ti {someone.how_old_they_are()} let a narozeniny máš za y dní.")

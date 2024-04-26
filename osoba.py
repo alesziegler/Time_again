@@ -25,4 +25,17 @@ class Osoba:
       age = (self.birthday_2024().year - self.birth_date.year) - 1
     
     return age
+
+  def how_long_till_next_birthday(self):
+
+    birthday_2025 = datetime((datetime.today().year +1), self.birth_date.month,self.birth_date.day)
     
+    if self.birthday_2024() > datetime.today():
+      next_birthday = self.birthday_2024()
+      
+    elif self.birthday_2024() <= datetime.today():
+      next_birthday = birthday_2025
+
+    how_long = next_birthday - datetime.today()
+    
+    return how_long.days
